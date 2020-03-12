@@ -27,7 +27,7 @@ module.exports = (number, source, keyword, region) => {
       range: '\'Номера с формы\'!A:H'
     }, (err, res) => {
       try {
-        // по другому я хз как получить номер свободной строки(и да я знаю что row это не строка, но кого это ебет?)
+        // по другому я хз как получить номер свободной строки
         const rows = res.data.values.length + 1
         const rengeForNew = `\'Номера с формы\'!A${rows}:H${rows}`
         const date = new Date()
