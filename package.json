@@ -1,0 +1,32 @@
+{
+  "name": "analitics_app",
+  "version": "1.0.0",
+  "description": "An application for collecting analytics from telephony created by Vladimir Dobrynin for use on a partnership basis for the company connect-providers",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "ghs": "node index.js"
+  },
+  "keywords": [
+    "voximplant",
+    "y/g",
+    "metrics",
+    "crm"
+  ],
+  "author": "Dobrynin Vladimir <Dobrynin.ofice@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^3.0.4",
+    "googleapis": "^47.0.0",
+    "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2",
+    "numcap": "0.0.14",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0"
+  }
+}
